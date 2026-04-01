@@ -886,6 +886,23 @@ button { font-family: inherit; cursor: pointer; border: none; outline: none; }
 
   .footer__inner { flex-direction: column; align-items: center; text-align: center; }
   .footer__nav { justify-content: center; }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 48px;
+  }
+  .about__interests {
+    justify-content: center;
+  }
+  .about__photo-wrap {
+    margin: 0 auto;
+    width: 280px;
+  }
+  .about__photo {
+    width: 280px;
+    height: 380px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -893,4 +910,20 @@ button { font-family: inherit; cursor: pointer; border: none; outline: none; }
   .btn-primary, .btn-outline { width: 100%; max-width: 280px; justify-content: center; }
   .skills__grid { grid-template-columns: 1fr; }
   .hero__inner { padding: 56px 24px 96px; }
+
+  .section-header { text-align: center; }
+  .section-divider { margin-left: auto; margin-right: auto; }
+
+  .experience__text, .objective__text, .about__text { text-align: center; }
+  .objective__tags { justify-content: center; }
+
+  .hero__stats { flex-direction: column; gap: 20px; }
+  
+  .about__photo-wrap {
+    width: 240px;
+  }
+  .about__photo {
+    width: 240px;
+    height: 330px;
+  }
 }
